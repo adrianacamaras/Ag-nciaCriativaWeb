@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000; /* Fundo preto */
+    color: #e0e0e0; /* Texto clarinho */
+    font-family: sans-serif;
+}
+
+/* Usando Flexbox no menu */
+.topo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.logo span {
+    color: #4fd1c5; /* Verde água */
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu a {
+    color: #4fd1c5;
+    text-decoration: none;
+}
+
+/* Banner da home */
+.banner {
+    height: 60vh; /* Altura relativa */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #4fd1c5;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    color: #4fd1c5;
+}
+
+/* Estilo das seções */
+.secao {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+h2 {
+    color: #4fd1c5;
+    margin-bottom: 20px;
+}
+
+/* Usando Grid nos serviços */
+.grade-servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsivo */
+    gap: 15px;
+}
+
+.item-servico {
+    border: 1px solid #4fd1c5;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Formulário simples */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.formulario input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background-color: #4fd1c5;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Ajuste para celular */
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column;
+    }
+    
+    .menu {
+        margin-top: 15px;
+    }
+}
